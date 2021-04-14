@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+import(NAM)
+import(lme4)
+import(utils)
+import(stats)
