@@ -5,7 +5,7 @@
 Full GBS markers, bins, and more
 }
 \description{
-Genetic values for a given trait computed by REML.
+Download data not included in the package due to size.
 }
 \usage{
 DownloadData( dataset = "all", redownload = FALSE )
