@@ -20,7 +20,6 @@ Single nucleotide polymorphisms were collected using genotype by sequencing for 
 \usage{
 data(pheno)
 data(geno)
-data(bins)
 }
 \details{
 
@@ -68,5 +67,4 @@ Tian, F., Bradbury, P. J., Brown, P. J., Hung, H., Sun, Q., Flint-Garcia, S., Ro
 \examples{
 data(pheno)
 data(geno)
-data(bins)
 }
