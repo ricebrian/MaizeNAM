@@ -6,7 +6,7 @@ Date: 2021-03-30
 Author: Brian Rice, Alencar Xavier, Alex Lipka.
 Maintainer: Alencar Xavier <alenxav@gmail.com>
 Description: Genomic and multi-environmental maize data. Maize Nested
-    Association Mapping (NAM) project dataset funded by the *****
+    Association Mapping (NAM) project dataset funded by the National Science Foundation.
     BLUP function formats data for genome-wide prediction and association analysis.
 License: GPL-3
 Imports: lme4
