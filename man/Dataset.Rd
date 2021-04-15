@@ -1,18 +1,17 @@
 \name{Dataset}
 \alias{geno}
-\alias{bins}
 \alias{pheno}
 \alias{Z}
-\alias{B}
 \alias{NamData}
 \alias{MetaData}
 \title{
 Dataset
 }
 \description{
+  
 Genotypes and phenotypes from the Maize Nested Association Mapping (NAM) dataset. See the section "details" for the description of data objects.
 
-The Maize NAM population (panzea.org) is a nested association mapping panel designed to dissect the genetic architecture of complex traits. It comprises about 5000 recombinant inbred lines (RILs) derived from biparental crosses between a common parent, B73, and 25 selected stiff stalk, non-stiff stalk, popcorn, sweetcorn, tropical, and mixed lines, i.e., the founder lines. Each biparental population approximately contains 200 individuals. Additional genotype and phenotype data for 281 members from the Goodman-Buckler diversity panel (Flint-Garcia et al. 2004) can be download using LoadData("panel").   
+The Maize NAM population (panzea.org) is a nested association mapping panel designed to dissect the genetic architecture of complex traits. It comprises about 5000 recombinant inbred lines (RILs) derived from biparental crosses between a common parent, B73, and 25 selected stiff stalk, non-stiff stalk, popcorn, sweetcorn, tropical, and mixed lines, i.e., the founder lines. Each biparental population approximately contains 200 individuals. Additional genotype and phenotype data for 281 members from the Goodman-Buckler diversity panel (Flint-Garcia et al. 2004) can be download using LoadData("panel").
 
 Single nucleotide polymorphisms were collected using genotype by sequencing for 4984 RILs and 281 diverse inbred lines (Glaubitz et al. 2014). Chromosome and basepair coordinates were uplifted maize B73 reference genome AGPv4.
 
@@ -25,14 +24,9 @@ data(geno)
 
 Datasets of the MaizeNAM project was downloaded on April 2nd 2020 from \url{panzea.org}. Phenotypic data was collected at four locations (Aurora, NY; Clayton, NC; Columbia, MO; and Urbana, IL) between 2006 - 2009 (see BLUP). Studies performed on the entire dataset with additional detail about the experimental design include Brown et al., 2011; Buckler et al., 2009; Cook et al., 2012; H. Y. Hung et al., 2012a; H. Y. Hung et al., 2012b; Kump et al., 2011; Peiffer et al., 2014; Poland et al., 2011; Tian et al., 2011. Please note that GBS data contained in this package was not avalible at the time these were studies were published. 
 
-Genotypic matrix "B" contains bin information for individual lines and matrix "Z" contains 4085 SNPs segregating across RIL familes. Matrix "X" and "Y", downloaded using LoadData("panel"), contain 269365 SNPs. 
-
-In each dataset, phenotypes are allocated into two objects, one with the lines ("data.line") and one with checks and parents ("data.checks"). Information on data objects include year, location, environment (combination of year and location), strain, family, set (set in each environment), spot (combination of set and environment), height (in centimeters), R8 (number of days to maturity), planting date (501 represents may 1), flowering (701 represents july 1), maturity (901 represents september 1), lodging (score from 1 to 5), yield (in Kg/ha), moisture, protein (percentage in the seed), oil (percentage in the seed), fiber (percentage in the seed), seed size (in grams of 100 seeds).
-
+Matrix "Z" contains 4085 SNPs segregating across RIL familes. Matrix "X" and "Y", downloaded using LoadData("panel"), contain 269365 SNPs. 
 
 The dataset "NAMGeno" and "Diversitygeno" contains the genotypic information in the matrix form, with missing values imputed using the software LinkImputed (Money et al. 2015). Note: these datasets have not been filterd for minor allele frequency. Datasets "NAMmap" and "Diversitymap" contain the accompnaying SNP allele and positional information in data.frame format. 
-
-Similar to the datasets previously described, phenotypes are allocated into two objects, lines ("data.line.in") and checks ("data.checks.in"). Information on these data objects include year, location, environment (combination of year and location), strain, family, set (set in each environment), spot (combination of set and environment), the spatial coordinates of the field plots (BLOCK, ROW and COLUMN), plant height (in centimeters), R1 (number of days to flowering), R8 (number of days to maturity), lodging (score from 1 to 5), yield (in bu/ac), leaf shape (ratio length:width), number of nodes in the main stem, number of pods in the main stem, number of pods per node, average canopy coverage, rate of canopy coverage, growing degree day to flowering (GDD_R1), growing degree day to maturity (GDD_R1), and length of reproductive period in terms of growing degree day (GDD_REP).
 
 }
 \author{
