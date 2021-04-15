@@ -7,7 +7,7 @@ Best Linear Unbias Predictor
 Genetic values for a given trait computed by REML.
 }
 \usage{
-BLUP(trait="PlantHeight",family="all",env="all",dereg=TRUE,use_bins=TRUE)
+BLUP(trait="PlantHeight",family="all",env="all",dereg=TRUE,use_bins=FALSE)
 }
 \arguments{
   \item{trait}{
