@@ -4,7 +4,7 @@ Title: Maize Nested Association Mapping Dataset
 Version: 1.0
 Date: 2021-03-30
 Author: Brian Rice, Alencar Xavier, Alex Lipka.
-Maintainer: Alencar Xavier <alenxav@gmail.com>
+Maintainer: Brian Rice <ricebrian06@gmail.com>
 Description: Genomic and multi-environmental maize data. Maize Nested
     Association Mapping (NAM) project dataset funded by the National Science Foundation.
     BLUP function formats data for genome-wide prediction and association analysis.
@@ -14,4 +14,4 @@ Depends: R (>= 3.5)
 NeedsCompilation: yes
 Repository: CRAN
 Date/Publication: 2020-03-30 17:30:07 UTC
-Packaged: 2021-03-26 21:23:05 UTC; rd7564
+Packaged: 2021-03-26 21:23:05 UTC;
