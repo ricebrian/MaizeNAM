@@ -1,5 +1,5 @@
-\name{MaizeNAM-package}
-\alias{MaizeNAM-package}
+\name{MaizeNAM}
+\alias{MaizeNAM}
 \docType{package}
 \title{
 Maize Nested Association Mapping Dataset
@@ -23,5 +23,5 @@ Brian Rice, Alencar Xavier, Alex Lipka
 Maintainer: Brian Rice <ricebrian06@gmail.com>
 }
 \seealso{
-Functions: BLUP, data(pheno), data(geno) and data(bins).
+Main functions: BLUP, data(pheno), data(geno), DownloadData() and LoadData().
 }
