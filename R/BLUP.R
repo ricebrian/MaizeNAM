@@ -8,7 +8,7 @@ BLUP=function(trait="PlantHeight",family="all",env="all",dereg=TRUE,use_bins=FAL
         
     # Genotypic matrix of lines
     if(use_bins){
-      DownloadData()
+      DownloadData(dataset = "bins")
       data(bins ,envir=environment(),package="MaizeNAM")
       geno = B
       rm(B)
