@@ -7,7 +7,7 @@ BLUP=function(trait="PlantHeight",family="all",env="all",dereg=TRUE,use_bins=FAL
     if(family=="panel"){
     DownloadData("panel",redownload=FALSE)
         data(panel,envir=environment(),package="MaizeNAM")
-        Namdata=DiversityPanelPheno
+        NamData=DiversityPanelPheno
     } else {
     data(pheno,envir=environment(),package="MaizeNAM")
         }
