@@ -27,7 +27,7 @@ BLUP=function(trait="PlantHeight",family="all",env="all",dereg=TRUE,use_bins=FAL
         
     # FAM
   if(family[1]=="panel"){
-    fam=as.numeric(rep(27,281))
+    fam=as.numeric(rep(27,nrow(geno)))
    } else{
        fam=as.numeric(gsub('Z0|E.+','',rownames(geno)))
     }    
