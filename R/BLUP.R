@@ -4,7 +4,7 @@ BLUP=function(trait="PlantHeight",family="all",env="all",dereg=TRUE,use_bins=FAL
     Z=NamData=B=matrix(NA,2,2)
   
     # Load data
-    if(family=="panel"){
+    if(family[1]=="panel"){
     DownloadData("panel",redownload=FALSE)
         data(panel,envir=environment(),package="MaizeNAM")
         NamData=DiversityPanelPheno
@@ -12,7 +12,7 @@ BLUP=function(trait="PlantHeight",family="all",env="all",dereg=TRUE,use_bins=FAL
     data(pheno,envir=environment(),package="MaizeNAM")
         }
     # Genotypic matrix of lines
-    if(family=="panel"){
+    if(family[1]=="panel"){
       geno = DiversityPanelGeno
      } else if(use_bins){
       DownloadData(dataset = "bins")
