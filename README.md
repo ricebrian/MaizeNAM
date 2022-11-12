@@ -3,6 +3,7 @@
 
 ### Get the complete SNP data
 `require(MaizeNAM)`
+
 `DownloadData()`
 
 ### Get genotypic data + phenotypic value for any given trait
@@ -10,6 +11,7 @@
 
 ### Check data
 `head(GetData$Phen) # Deregressed phenotypic BLUPs`
+
 `dim(GetData$Gen) # Panel of SNPs segregating in all familier`
 
 ### Analysis
