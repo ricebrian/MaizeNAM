@@ -102,17 +102,17 @@ DownloadData = function( dataset = "all", redownload = FALSE ){
   
   if( ! "gbs.RData" %in% dir(system.file("data","",package="MaizeNAM")) | redownload  ){
     cat('Downloading GBS data \n')
-    if(dataset=="all"|dataset=="gbs") download.file("https://urldefense.com/v3/__https://github.com/ricebrian/MaizeNAMfullGenoData/raw/main/MaizeNAMxz.RData", gbs, mode = "wb")
+    if(dataset=="all"|dataset=="gbs") download.file("https://github.com/ricebrian/MaizeNAMfullGenoData/raw/main/MaizeNAMxz.RData", gbs, mode = "wb")
   }
   
   if( ! "panel.RData" %in% dir(system.file("data","",package="MaizeNAM")) | redownload ){
     cat('Downloading diversity panel data \n')
-    if(dataset=="all"|dataset=="panel") download.file("https://urldefense.com/v3/__https://github.com/ricebrian/MaizeNAMfullGenoData/raw/main/DiversityPanelData.Rdata", panel, mode = "wb")
+    if(dataset=="all"|dataset=="panel") download.file("https://github.com/ricebrian/MaizeNAMfullGenoData/raw/main/DiversityPanelData.Rdata", panel, mode = "wb")
   }
   
   if( ! "bins.RData" %in% dir(system.file("data","",package="MaizeNAM")) | redownload  ){
     cat('Downloading genotypic bins data \n')
-    if(dataset=="all"|dataset=="bins") download.file("https://urldefense.com/v3/__https://github.com/ricebrian/MaizeNAMfullGenoData/raw/main/bins.RData", bins, mode = "wb")
+    if(dataset=="all"|dataset=="bins") download.file("https://github.com/ricebrian/MaizeNAMfullGenoData/raw/main/bins.RData", bins, mode = "wb")
   }
   
   
